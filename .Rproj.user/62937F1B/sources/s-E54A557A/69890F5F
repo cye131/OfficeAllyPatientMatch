@@ -7,12 +7,12 @@
     "folds" : "",
     "hash" : "0",
     "id" : "69890F5F",
-    "lastKnownWriteTime" : 1585501718,
-    "last_content_update" : 1585501718077,
+    "lastKnownWriteTime" : 1585503552,
+    "last_content_update" : 1585503552788,
     "path" : "~/OfficeAllyPatientMatch/R/trainModel.R",
     "project_path" : "R/trainModel.R",
     "properties" : {
-        "cursorPosition" : "25,54",
+        "cursorPosition" : "9,0",
         "scrollLine" : "0"
     },
     "read_only" : false,

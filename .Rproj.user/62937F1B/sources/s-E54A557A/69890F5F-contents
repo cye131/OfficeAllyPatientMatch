@@ -8,8 +8,8 @@
 #' @export
 trainModel = function (INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_FITTED_CSV_PATH ) {
 
-  if (file.access(OUTPUT_MODEL_RDS_PATH, mode=2) == -1) stop('OUTPUT_MODEL_RDS_PATH not writeable')
-  if (file.access(OUTPUT_FITTED_CSV_PATH, mode=2) == -1) stop('OUTPUT_FITTED_CSV_PATH not writeable')
+  # if (file.access(OUTPUT_MODEL_RDS_PATH, mode=2) == -1) stop('OUTPUT_MODEL_RDS_PATH not writeable')
+  # if (file.access(OUTPUT_FITTED_CSV_PATH, mode=2) == -1) stop('OUTPUT_FITTED_CSV_PATH not writeable')
 
   ### Import Data
   rawDf = readr::read_csv(INPUT_TRAINING_CSV_PATH)
