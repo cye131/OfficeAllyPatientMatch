@@ -4,9 +4,9 @@ This model matches patient data using a logit regression over penalty functions 
 The model goes through several steps:
 1. We determine functions to penalize differences in characteristics between two patient IDs. We consider the possibility of misspellings, transcription errors, as well as other reasons there could be different data between two identical patients. For example, one such characteristic we used was the minimum of the difference between the digit sum of the date-of-births and the difference between the numeric values of the date-of-births. This takes into account the fact that there is little difference between 12/31/1999 and 1/1/2000, but also little difference between 12/31/1999 and 12/13/1999.
 2. Other penalty functions are generated with commonly-used text-matching algorithms (e.g., soundex and Levenshtein distance) as well as a spelling-correction algorithmn (Hunspell).
-3. Alternate penalty terms are added for NA/missing values.
+3. Additional penalty terms are added for indication of NA/missing values.
 4. A logit regression is used to determine the coefficient weights on each penalty term. Covariate selection is performed through an elastic net regularization process, with the hyperparameters selected through 10-fold cross-validation.
-5. The model can then be used to match new data.
+5. The model can then be used to match new testing data or calculated the in-sample fit on the training data.
 
 
 # Usage
