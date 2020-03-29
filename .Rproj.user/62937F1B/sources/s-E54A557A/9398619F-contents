@@ -13,7 +13,7 @@ source('https://raw.githubusercontent.com/cye131/OfficeAllyPatientMatch/master/R
 model = trainModel(
   INPUT_TRAINING_CSV_PATH = 'https://raw.githubusercontent.com/OfficeAllyGit/LAHack-2020/master/Challenge%201%20-%20Patient%20Match/Patient%20Matching%20Data.csv',
   OUTPUT_MODEL_RDS_PATH = 'C:/Users/Charles/Documents/model.rds',
-  OUTPUT_TRAINING_CSV_PATH  = 'C:/Users/Charles/Documents/train-output.csv'
+  OUTPUT_TRAINING_CSV_PATH = 'C:/Users/Charles/Documents/train-output.csv'
   )
 
 testModel(

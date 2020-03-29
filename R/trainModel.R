@@ -6,7 +6,7 @@
 #'
 #'
 #' @export
-trainModel = function (INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_TRAINING_CSV_PATH ) {
+trainModel = function(INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_TRAINING_CSV_PATH) {
 
   # if (file.access(OUTPUT_MODEL_RDS_PATH, mode=2) == -1) stop('OUTPUT_MODEL_RDS_PATH not writeable')
   # if (file.access(OUTPUT_TRAINING_CSV_PATH, mode=2) == -1) stop('OUTPUT_TRAINING_CSV_PATH not writeable')
