@@ -1,18 +1,3 @@
-# INPUT_TRAINING_CSV_PATH = 'https://raw.githubusercontent.com/OfficeAllyGit/LAHack-2020/master/Challenge%201%20-%20Patient%20Match/Patient%20Matching%20Data.csv'
-# OUTPUT_FITTED_CSV_PATH = 'C:/Users/Charles/Downloads/output.csv'
-# OUTPUT_MODEL_RDS_PATH = 'C:/Users/Charles/Downloads/model.rds'
-#
-#
-# INPUT_TESTING_CSV_PATH = 'C:/Users/Charles/Downloads/test.csv'
-# INPUT_MODEL_RDS_PATH = 'C:/Users/Charles/Downloads/model.rds'
-# OUTPUT_FITTED_CSV_PATH = 'C:/Users/Charles/Downloads/output2.csv'
-#
-#
-# # Set constants
-# INPUT_TESTING_CSV_PATH = 'C:/Users/Charles/Downloads/test.csv'
-# INPUT_MODEL_RDS_PATH = 'C:/Users/Charles/Downloads/model.rds'
-# OUTPUT_FITTED_CSV_PATH = 'C:/Users/Charles/Downloads/output2.csv'
-
 ### Load libraries
 library(tidyverse)
 library(hunspell)
@@ -28,5 +13,11 @@ source('https://raw.githubusercontent.com/cye131/OfficeAllyPatientMatch/master/R
 model = trainModel(
   INPUT_TRAINING_CSV_PATH = 'https://raw.githubusercontent.com/OfficeAllyGit/LAHack-2020/master/Challenge%201%20-%20Patient%20Match/Patient%20Matching%20Data.csv',
   OUTPUT_MODEL_RDS_PATH = 'C:/Users/Charles/Documents/model.rds',
-  OUTPUT_FITTED_CSV_PATH  = 'C:/Users/Charles/Documents/test-model-output.csv'
+  OUTPUT_TRAINING_CSV_PATH  = 'C:/Users/Charles/Documents/train-output.csv'
   )
+
+testModel(
+  INPUT_TESTING_CSV_PATH = 'C:/Users/Charles/Downloads/test.csv',
+  MODEL = model,
+  OUTPUT_TESTING_CSV_PATH = 'C:/Users/Charles/Documents/test-output.csv'
+)

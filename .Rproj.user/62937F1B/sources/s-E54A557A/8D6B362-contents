@@ -2,11 +2,11 @@
 #'
 #' @param INPUT_TESTING_CSV_PATH URL or file path of csv with test data
 #' @param MODEL Model object obtained from trainModel()
-#' @param OUTPUT_FITTED_CSV_PATH File path ending with .CSV extension where fitted values will be output
+#' @param OUTPUT_TESTING_CSV_PATH File path ending with .CSV extension where fitted values will be output
 #'
 #'
 #' @export
-testModel = function(INPUT_TESTING_CSV_PATH, MODEL, OUTPUT_FITTED_CSV_PATH) {
+testModel = function(INPUT_TESTING_CSV_PATH, MODEL, OUTPUT_TESTING_CSV_PATH) {
 
   ## Import data
   rawDf = readr::read_csv(INPUT_TESTING_CSV_PATH)
@@ -180,6 +180,6 @@ testModel = function(INPUT_TESTING_CSV_PATH, MODEL, OUTPUT_FITTED_CSV_PATH) {
     sapply(., function(x) paste0(x, collapse = ',')) %>% tibble(patientIds = .) %>%
     dplyr::bind_cols(groupId = 1:nrow(.), .)
 
-  write.csv(finalDf, OUTPUT_FITTED_CSV_PATH, row.names = FALSE)
+  write.csv(finalDf, OUTPUT_TESTING_CSV_PATH, row.names = FALSE)
   return(finalDf)
 }

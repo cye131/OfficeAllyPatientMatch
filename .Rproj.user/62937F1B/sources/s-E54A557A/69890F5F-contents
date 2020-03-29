@@ -2,14 +2,14 @@
 #'
 #' @param INPUT_TRAINING_CSV_PATH URL or file path of csv
 #' @param OUTPUT_MODEL_RDS_PATH File path ending with .RDS extension where model will be output
-#' @param OUTPUT_FITTED_CSV_PATH File path ending with .CSV extension where fitted values will be output
+#' @param OUTPUT_TRAINING_CSV_PATH File path ending with .CSV extension where fitted values will be output
 #'
 #'
 #' @export
-trainModel = function (INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_FITTED_CSV_PATH ) {
+trainModel = function (INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_TRAINING_CSV_PATH ) {
 
   # if (file.access(OUTPUT_MODEL_RDS_PATH, mode=2) == -1) stop('OUTPUT_MODEL_RDS_PATH not writeable')
-  # if (file.access(OUTPUT_FITTED_CSV_PATH, mode=2) == -1) stop('OUTPUT_FITTED_CSV_PATH not writeable')
+  # if (file.access(OUTPUT_TRAINING_CSV_PATH, mode=2) == -1) stop('OUTPUT_TRAINING_CSV_PATH not writeable')
 
   ### Import Data
   rawDf = readr::read_csv(INPUT_TRAINING_CSV_PATH)
@@ -194,7 +194,7 @@ trainModel = function (INPUT_TRAINING_CSV_PATH, OUTPUT_MODEL_RDS_PATH, OUTPUT_FI
     sapply(., function(x) paste0(x, collapse = ',')) %>% tibble(patientIds = .) %>%
     dplyr::bind_cols(groupId = 1:nrow(.), .)
 
-  write.csv(finalDf, OUTPUT_FITTED_CSV_PATH, row.names = FALSE)
+  write.csv(finalDf, OUTPUT_TRAINING_CSV_PATH, row.names = FALSE)
   saveRDS(model, OUTPUT_MODEL_RDS_PATH)
   return(model)
 }
