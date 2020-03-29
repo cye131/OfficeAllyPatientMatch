@@ -1,3 +1,6 @@
+# Model
+This model matches patient data using a logit regression over penalty functions determined by a mix of qualitatively derived functions as well as commonly used text-similarity algorithmns. To prevent overfitting, final covariate selection for the regression is performed by an elastic net regularization process.
+
 # Usage
 1. If you don't have R — install it!
 2. Once you've opened R, you will need to install these packages which you can do using the install.packages() function: tidyverse, hunspell, stringr, stringdist, glmnet.
