@@ -1,0 +1,15 @@
+Package: OfficeAllyPatientMatch
+Title: Office Ally Patient Matching
+Version: 0.1.0
+Authors@R: person("Charles", "Ye", email = "c.ye@outlook.com",
+                  role = c("aut", "cre"))
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+LazyData: true
+Imports:
+	tidyverse,
+	dplyr,
+	hunspell,
+	stringr,
+	stringdist,
+	glmnet

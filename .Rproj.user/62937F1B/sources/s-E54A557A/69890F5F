@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585500417941.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "69890F5F",
+    "lastKnownWriteTime" : 1585501718,
+    "last_content_update" : 1585501718077,
+    "path" : "~/OfficeAllyPatientMatch/R/trainModel.R",
+    "project_path" : "R/trainModel.R",
+    "properties" : {
+        "cursorPosition" : "25,54",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585500882181.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8D6B362",
+    "lastKnownWriteTime" : 1585502149,
+    "last_content_update" : 1585502149280,
+    "path" : "~/OfficeAllyPatientMatch/R/testModel.R",
+    "project_path" : "R/testModel.R",
+    "properties" : {
+        "cursorPosition" : "6,2",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
